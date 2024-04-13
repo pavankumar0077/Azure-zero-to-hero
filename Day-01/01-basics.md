@@ -8,6 +8,30 @@
 
 ![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/0ed6246f-68c7-4522-995f-fc8bb0e2e3e1)
 
+## Virtualization
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/8800c9b5-b3df-435c-9e2f-6c217fca8a61)
+
+## API
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/3354da7f-e7c2-42fc-90fa-d278011c81bb)
+
+## Regions $ AZ's
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/5e5e21c9-7587-4484-9d5e-a01546bb76c7)
+
+## Load Balancer
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/d1504649-f2cf-4b38-8071-99884356ca6c)
+
+## Scability
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/797455e7-173f-4032-b65d-3bd3c457ce77)
+
+## Elasticity
+- Auto scaling of infra
+
+## High Availability 
+- Hih infra setup
+
+## Disaster Rescovery
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/fa9b4ee2-0e97-4a6e-97f5-c398f0a6a1d3)
+
 
 ## What is Cloud ?
 
