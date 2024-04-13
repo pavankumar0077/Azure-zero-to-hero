@@ -1,5 +1,14 @@
 # Basics of Cloud Computing
 
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/d4fff868-aea7-45bc-8849-10371f966564)
+
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/f5693cc6-620a-4acb-a76e-4002d518a1d2)
+
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/917a06bc-9a75-4bc7-9416-b516aa99ef66)
+
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/0ed6246f-68c7-4522-995f-fc8bb0e2e3e1)
+
+
 ## What is Cloud ?
 
 In simpler terms, imagine the cloud as a vast, virtual space where you can store files, run software, and access various services over the internet. 
