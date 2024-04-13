@@ -1,5 +1,10 @@
 # IaaS vs PaaS vs SaaS models in Azure
 
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/ec0d2eab-1da5-4124-898e-cca1d08caae1)
+
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/fe017478-6ba5-410e-ba64-268878ee41c9)
+
+
 ## Infrastructure as a Service (IaaS)
 
 IaaS is a cloud computing model that provides virtualized computing resources over the internet. In Azure, IaaS offerings include virtual machines, storage, and networking components. Users have more control over the infrastructure but are responsible for managing and maintaining the operating system, middleware, and applications.
