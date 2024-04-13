@@ -1,6 +1,13 @@
 # Exploring Regions and Availability Zones in Azure
 
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/a5393134-84d2-4840-ba17-82b85dd8693a)
+
+
 ## Regions in Azure
+
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/d9af22be-4ff5-4eb2-ac46-9337d37d1507)
+
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/3a5d0d34-8ca6-4967-be9b-1069719aa9cf)
 
 Azure is a cloud computing platform provided by Microsoft, and it is globally distributed across multiple geographic locations known as regions. Each Azure region is a set of data centers deployed within a defined geographic area, and it is designed to provide low-latency access to Azure services for users and applications in that region.
 
