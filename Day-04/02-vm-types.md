@@ -2,6 +2,13 @@
 
 Azure provides a variety of virtual machine (VM) offerings to cater to different workload requirements. Each VM type is designed with specific hardware configurations to meet diverse performance and scalability needs.
 
+## Run with Azure Spot discount
+- Azure will have a lot of servers they have a lot of data centers and they have regions.
+- Obviously they cannot use the complete resources for 100%, Their will be some unused resources even though azure use the concept of virtualization the concept of containerization and any modern techniques that they have sill there will some unused resouces with azure and if these things are not used properly azure will waste this resources so that's why what azure does they will give you these unused resources for the special discount.
+- These resources can go down anytime, If we are selecting Run withe azure spot discount then azure can't guarantee that this VM will be available all the time. So you cannot run this for production workloads.
+- This we can use for POC's and Development purposes.
+
+
 ## General Purpose VMs
 
 **Example: Standard_D2s_v3**
@@ -57,3 +64,5 @@ Azure provides a variety of virtual machine (VM) offerings to cater to different
 - **Description:** Burstable VMs provide a baseline level of CPU performance with the ability to burst above the baseline for a certain period. They are cost-effective for workloads with varying CPU usage.
 
 - **Use Case:** Development and testing environments, small websites, and applications with variable workloads.
+
+REF LINK : ``` https://azure.microsoft.com/en-in/pricing/details/virtual-machines/series/ ```
