@@ -8,6 +8,8 @@ In traditional computing, a single physical server runs a single operating syste
 
 ## Components of Virtualization
 
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/06b93714-5786-456b-a8fd-73ace338cf28)
+
 1. **Hypervisor (Virtual Machine Monitor):**
    - The hypervisor is a crucial component of virtualization. It sits between the hardware and the operating systems, managing and allocating resources to virtual machines (VMs).
    - There are two types of hypervisors: Type 1 (bare-metal) runs directly on the hardware, while Type 2 (hosted) runs on top of an existing operating system.
