@@ -66,3 +66,11 @@ Azure provides a variety of virtual machine (VM) offerings to cater to different
 - **Use Case:** Development and testing environments, small websites, and applications with variable workloads.
 
 REF LINK : ``` https://azure.microsoft.com/en-in/pricing/details/virtual-machines/series/ ```
+
+VMSS (Virtual Machine Scale Sets)
+--
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/44884313-cd07-4783-be49-a1613f1f29b1)
+
+- Auto Scaling
+- It will load balance the traffic based on the requests
+
