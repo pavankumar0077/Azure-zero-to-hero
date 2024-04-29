@@ -2,6 +2,14 @@
 
 ## Virtual Network
 
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/8107e67f-98db-45a2-95ed-d43e55b47c87)
+
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/0e7337ee-2352-46a4-8352-e81585f0d5c7)
+
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/4a005211-4f52-42fc-8722-7c04d682dde6)
+
+- Any no of VNET can be created.
+
 A Virtual Network (VNet) in Azure is a logically isolated network that securely connects Azure resources and extends on-premises networks. Key features include:
 
 - **Isolation**: VNets provide isolation at the network level for segmenting resources and controlling traffic.
