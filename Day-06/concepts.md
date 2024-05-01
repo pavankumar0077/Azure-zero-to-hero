@@ -1,5 +1,16 @@
 # Azure Networking Advanced
 
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/82132e4d-dfbe-4def-9d14-a78bc2073d49)
+
+### VNET
+- When we create a Virtual Network in Azure, By default this VNET is deployed on multiple Availability Zones that are there in that particular region.
+- Let's say you requested for VNET in east-us region, by default the VNET that we get will be available in Zone 1, Zone 2 & Zone 3 of east-us
+- Let's say we have deployed a web-app'n in web-subnet that is created and for some reason availability zone 1 has gone down, If this VNET is created only in availability zone 1 then the problem is that the
+complete VNET will go down along with app'n that we have deployed and instance that we have deployed and all the resources that are available in this availability zone.
+The recommended way is if a critical application then keep multiple copies of it, One in AZ 1 and the other in AZ 2.
+
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/5a43784a-2581-44f7-adf7-15be516eb2e9)
+
 ## Azure App Gateway & WAF
 
 Azure Application Gateway is a web traffic load balancer that enables you to manage and route traffic to your web applications. Web Application Firewall (WAF) provides protection against web vulnerabilities. Key features include:
@@ -44,6 +55,9 @@ Azure Firewall is a managed, cloud-based network security service that protects 
 
 ### Virtual Network Peering
 
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/a6bcbecc-b759-46de-ae10-30c533d15844)
+
+
 Virtual Network Peering allows connecting Azure Virtual Networks directly, enabling resources in one VNet to communicate with resources in another. Key features include:
 
 - **Global VNet Peering**: Peering can be established across regions.
@@ -59,6 +73,8 @@ VNet Gateway enables secure communication between on-premises networks and Azure
 - **Point-to-Site VPN**: Enables secure remote access to Azure resources.
 
 ## VPN Gateway
+
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/ee6637b2-363f-444b-a170-9f092da72cbd)
 
 Azure VPN Gateway provides secure, site-to-site connectivity between your on-premises network and Azure. Key features include:
 
