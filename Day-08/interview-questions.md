@@ -42,6 +42,9 @@ Group VMs based on applications, which allows for better role-based management a
 The priority of this rule is 65000, so we need to create a Deny rule with less than 65000 priority number.
 
 ### Are Azure NSGs stateful or stateless ?
+
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/613c9503-62f9-434b-af4c-3fb844f2fd7d)
+
 They are stateful in nature. That means if you allow a port for inbound traffic traffic to receive the request. You don’t have to open the port in outbound rules to send response back.
 
 Example: If you host a host an application on port 80 in Azure VM and allow inbound traffic for customers to access it. You don’t need to open port 80 in outbound traffic to send response back to the customer.
@@ -53,19 +56,24 @@ Designed for controlling both outbound and inbound traffic to and from resources
 NSG:
 Typically associated with subnets or individual network interfaces to control traffic within a VNet and between VNets.
 
-### What are the advantages of resource groups in azure ?
-- Logical Organization
-- Lifecycle Management
-- Resource Group Tagging
-- Role-Based Access Control (RBAC)
-- Cost Management
+### What are the advantages of resource groups in azure?
+- Logical Organization - In a Project we have dev, staging, prod env's that project has 10 app'ns couple of DB'S and a caching server we can go all of them into one single resource
+- Lifecycle Management - By grouping that we can do lifecycle management, we caan directly delete Resource group, we can also tag them using resource group tagging 
+- Resource Group Tagging - resource group tagging 
+- Role-Based Access Control (RBAC) - We can control RBAC 
+- Cost Management - Easy to track the cost of a particular project using resource group and their billing 
 - Resource Group Templates (Azure Resource Manager Templates)
 - Resource Locks
 
 ### What is the difference between Azure User Data and Custom Data ?
+
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/162cd018-90b3-46a5-bbfe-2cdacd43671b)
+
 User data is a new version of custom data and it offers added benefits. User data persists and lives in the cloud, accessible and updatable anytime. Custom data vanishes after first boot, accessible only during VM creation.
 
 ### What is the difference between Azure App Gateway and Azure LB ?
+
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/458e460e-a29d-4f2d-8d9b-d84b557cf60f)
 
 #### Azure Application Gateway:
 Operates at Layer 7 (Application layer) of the OSI model.
@@ -78,6 +86,8 @@ Distributes network traffic based on IP address and port.
 Suitable for generic TCP/UDP load balancing without application-specific features.
 
 ### Assume your company is using all the ideal Azure Networking setup and your application is deployed in the web subnet , Explain the traffic flow to your app ?
+
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/eb48c99e-b762-4d40-8b99-b1780d203f40)
 
 #### User Access:
 - External users access the application over the internet.
