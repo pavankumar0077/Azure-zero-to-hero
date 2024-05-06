@@ -1,5 +1,9 @@
 # Azure Tables
 
+- NOSQL STRUCTURE DATA
+- SEMI STRUCTURED
+
+
 1. What is it?
 
     Azure Tables is a NoSQL data store service provided by Azure.
