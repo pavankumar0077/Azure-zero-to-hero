@@ -3,6 +3,11 @@
 - 1000 requests at a time will be maintained in a queue.
 - SQS ON AWS
 
+- ![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/8711c1e9-cb9f-4633-b2bb-157dbadbcde1)
+- Mostly probably the messages in the queue are updated using AUTOMATION SCRIPT
+- APPLICAITON PROCESS THE EACH QUEUE IN THE ORDER
+- 
+
 1. What is it?
 
     Azure Queue Storage is a message queue service that allows the decoupling of components in a distributed application.
