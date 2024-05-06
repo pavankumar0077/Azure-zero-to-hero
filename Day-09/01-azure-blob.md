@@ -9,6 +9,10 @@
 - source code
 - ANS IT IS CHEAP IN PRICE.
 
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/7412827a-4997-46be-8a10-457eb870bd6c)
+
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/d914c843-e533-496e-af19-cf8f49f4b2ef)
+
 1. What is it?
 
     Azure Blob Storage is a cloud-based object storage solution provided by Microsoft Azure.
