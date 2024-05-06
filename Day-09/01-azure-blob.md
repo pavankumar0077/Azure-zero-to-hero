@@ -1,5 +1,14 @@
 # Azure Blob Storage
 
+## THIS SERVICE IS LIKE S3 IN AWS
+
+- It is Unstructured data
+- large files
+- images
+- videos
+- source code
+- ANS IT IS CHEAP IN PRICE.
+
 1. What is it?
 
     Azure Blob Storage is a cloud-based object storage solution provided by Microsoft Azure.
