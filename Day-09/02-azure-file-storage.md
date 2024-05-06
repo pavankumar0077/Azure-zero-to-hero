@@ -1,5 +1,11 @@
 # Azure File Storage
 
+### EFS IN AWS
+- VM
+- PODS
+- MULTIPLE PODS USE THE SINGLE VOLUME
+- ONE POD ONE VOLUME THEN IT IS CALLED MANAGED DISK.
+
 1. What is it?
 
     Azure File Storage is a fully managed file share service in the cloud.
