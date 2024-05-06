@@ -1,8 +1,11 @@
 # Azure Queue Storage
 
+- 1000 requests at a time will be maintained in a queue.
+- SQS ON AWS
+
 1. What is it?
 
-    Azure Queue Storage is a message queue service that allows decoupling of components in a distributed application.
+    Azure Queue Storage is a message queue service that allows the decoupling of components in a distributed application.
     It provides a reliable way to store and retrieve messages between application components, ensuring asynchronous communication.
 
 2. When to use it?
