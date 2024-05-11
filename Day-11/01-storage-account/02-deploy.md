@@ -1,5 +1,7 @@
 # Steps to deploy storage account arm template
 
+REF LINK : ```  ```
+
 ### Create resource group
 
 ```
@@ -43,6 +45,9 @@ az deployment group create --resource-group vscode --template-file 01-storage-ac
     "outputs": {}
 }
 ```
+
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/11049ede-da17-48b9-9a61-8144f84bdaec)
+
 
 - Schema - Validate the template
 - ContentVersion - It is a version control
