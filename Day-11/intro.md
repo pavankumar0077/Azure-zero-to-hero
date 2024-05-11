@@ -17,3 +17,9 @@ USER WRITE ----> ARM TEMPLATES (JSON TEMPLATES) ---> SUBMITTED TO AZURE RESOURCE
 
 ![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/f754a24a-fceb-4493-b24d-133ce2fadf12)
 
+DOWNLOAD THIS VS CODE EXTENSION FOR ARM TEMPLATES :Name: Azure Resource Manager (ARM) Tools
+Id: msazurermtools.azurerm-vscode-tools
+Description: Language server, editing tools and snippets for Azure Resource Manager (ARM) template files.
+Version: 0.15.11
+Publisher: Microsoft
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools
