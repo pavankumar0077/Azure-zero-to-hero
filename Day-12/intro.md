@@ -78,5 +78,6 @@
 - AS OF NOW, WE ARE GIVING OWNER, BUT WE CAN RESTRICT TO READER ACCESS AND ETC.
 - ![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/59b3639e-ca70-4fe3-841b-34795223bdb1)
 - NEXT REVIEW + ASSIGN
-- 
+- ![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/464ecfbb-0908-4992-b177-8248bab313ac)
+
 
