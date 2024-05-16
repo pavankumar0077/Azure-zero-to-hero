@@ -32,5 +32,11 @@ CI CD FLOW
 
 - ![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/3186f5d4-c2c5-4041-9f74-576998d6c0fb)
 
+THINGS WE HAVE TO DO IN K8S CLUSTER
+--
+Step 1 : Login to K8s cluster
+Step 2 : Install ARGO CD IN K8S CLUSTER
+STEP 3 : CONFIGURE ARGOCD
+STEP 4 : UPDATE SHELL SCRIPT -- REPO -- NEW IMAGE IN ACS
 
 
