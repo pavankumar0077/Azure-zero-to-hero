@@ -185,7 +185,7 @@ Cannot configure the agent because it is already configured. To reconfigure the 
 - ![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/6d28ffa9-51b7-45db-bdb2-3313c9d68cbf)
 
 azureuser@azureagent:~/myagent$ ./run.sh
-
+```
 ![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/f91082ac-1c73-41ac-85ac-5f665d24e15f)
 
 ### TEMPLATE INFO :
