@@ -172,7 +172,88 @@ aks-agentpool-36596996-vmss000000   Ready    agent   56m   v1.28.9   10.224.0.4 
 
 - ![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/1945cf72-d4b8-4d40-8a5c-6c1fb857c7ee)
 
-- 
+CREATE APP IN ARGO CD
+--
+- ![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/e0df124a-f019-4850-8122-41351d0488d1)
+- ![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/e80be610-9a79-41df-afe3-5839e6a556e3)
+- HERE k8s-specfiication is MANIFEST FILES - YAML FILES PATH IN THE REPO
+- ![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/369cf4ba-2776-4733-bcb3-bfcc90e9fded)
+- ![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/b753749c-8cfe-41e8-ae73-e086b0118762)
+- HERE WE DEPLOYED ALL THE MANIFEST FILES -- MICROSERVICE APPLICATION -- 9 APPS
+
+
+NOW CREATE THE UPDATE SCRIPT IN THE AZURE PIPELINES
+--
+- WE ARE WRITING UPDATE SCRIPT TO PICK UP CHANGES FROM ACR AND UPDATE BACK TO REPO - MANIFEST FILES
+- ![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/2af00092-7ce6-4e6f-9b52-a09a44e2a98f)
+- ![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/d1675606-9660-4842-ae6e-e9a9dfd64cec)
+- WE EVEN DON'T NEED TO GO TO ACR AS WELL WE NEED TO FIND THE PATTERN HOW NEW IMAGE IS STORED IN REGISTRY LIKE TAGS
+- ONLY TAG WILL BE CHANGED REST ALL THINGS ARE SAME.
+- TAG NUMBER IS -- BUILD NUMBER FROM THE PIPELINES SCRIPT
+- WE NEED TO CREATE THE SHELL SCRIPT TO UPDATE THE TAG ANY CHANGES IN THE TAG -- BUILD ID - BUMBER ID IS DYNAMIC
+
+SHELL SCRIPT
+--
+```
+#!/bin/bash
+
+set -x
+
+# Set the repository URL
+REPO_URL="https://<ACCESS-TOKEN>@dev.azure.com/<AZURE-DEVOPS-ORG-NAME>/voting-app/_git/voting-app"
+
+# Clone the git repository into the /tmp directory
+git clone "$REPO_URL" /tmp/temp_repo
+
+# Navigate into the cloned repository directory
+cd /tmp/temp_repo
+
+# Make changes to the Kubernetes manifest file(s)
+# For example, let's say you want to change the image tag in a deployment.yaml file
+sed -i "s|image:.*|image: <ACR-REGISTRY-NAME>/$2:$3|g" k8s-specifications/$1-deployment.yaml
+
+# Add the modified files
+git add .
+
+# Commit the changes
+git commit -m "Update Kubernetes manifest"
+
+# Push the changes back to the repository
+git push
+
+# Cleanup: remove the temporary directory
+rm -rf /tmp/temp_repo
+```
+- HERE $1 IS WILL LIKE VOTE, RESULT OR WORKER, DB like that -- WHCIH MICROSERVICE WE ARE USING -- IT DEFINEDS
+- $2 - REPO NAME -- like voting app, result app
+- $3 -- BUILD TAG
+  
+- ![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/10e99a00-19c0-4fd6-bcc3-9497a18d2601)
+- COPY SCRIPT HERE
+- THE ACCESS TOKEN WILL BE STORED IN ENV AND READ FROM THE COMMAND LINE ARGUMENT
+- ![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/ac1a43ec-4253-45bd-8e00-4bc8eacce9d7)
+- UPDATE IN THE AZURE PIPELINES SCRIPT
+- ![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/e93d0d61-5be6-463f-adc0-24862651efbb)
+```
+- stage: Upate
+  displayName: Update
+  jobs:
+  - job: Update
+    displayName: Update
+    steps:
+    - task: ShellScript@2
+      inputs:
+        scriptPath: 'scripts/updateK8sManifests.sh'
+        args: 'vote $imageRepository $tag'
+```
+- NOW NEW IMAGE WILL BE CERATED AND 
+
+
+
+
+
+
+
 
 
 
