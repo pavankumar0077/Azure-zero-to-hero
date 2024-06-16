@@ -163,6 +163,10 @@ stages:
 - To CREATE PAT -- ![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/f15e45e9-2e7d-40fa-a682-d7d2f1044a0c)
 - GO TO PAT -- create pat
 - IN VM
+
+- SERVER ULR : ``` https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/linux-agent?view=azure-devops ```
+- ![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/29a68a0f-703a-434e-becc-7e48f5e41272)
+- ORGANIZATION NAME
 ```
 azureuser@azureagent:~$ mkdir myagent && cd myagent
 
