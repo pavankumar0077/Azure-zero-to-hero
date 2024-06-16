@@ -196,6 +196,13 @@ azureuser@azureagent:~/myagent$ ./run.sh
 ```
 ![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/f91082ac-1c73-41ac-85ac-5f665d24e15f)
 
+## IN THE AGENT WE NEED DOCKER AS WELL
+```
+ sudo apt install docker.io
+ sudo usermod -aG docker azureuser
+ sudo systemctl restart docker
+```
+
 ### TEMPLATE INFO :
 - Triggers : Trigger are basically used when should this pipeline trigger ( When push or PR or commit happends this should be triggered automatically )
 - PATH BASED TRIGGERS :  THIS TRIGGERS ARE USED TO TRIGGER A SPECIFIC FOLDER CHANGES, THAT WE HAVE MENTIONED.
