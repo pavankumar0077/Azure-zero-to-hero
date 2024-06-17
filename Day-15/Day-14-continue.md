@@ -250,6 +250,7 @@ rm -rf /tmp/temp_repo
 
 ## NOTE : ARGOCD BYDEFAULT CHECK FOR THE CHANGES FOR 3 MINUTES, TO GET THE CHANGES FAST LIKE TO SYNC FAST WE NEED TO USE.
 
+## REF LINK : ``` https://argo-cd.readthedocs.io/en/stable/operator-manual/upgrading/2.0-2.1/#replacing-app-resync-flag-with-timeoutreconciliation-setting ```
 
 ```
 kubectl edit cm argocd-cm -n argocd
