@@ -54,6 +54,24 @@ PV in the project
 - IF YOUR STORAGE IS ACCESS BY A SINGLE POD THEN GO WITH EBS IN AWS AND DISKS IN AZURE
 - IF YOUR STORAGE ARE ACCESSED BY LOT FO PODS OR DIFFERENET CLUSTERS THEN USING EFS IN AWS AND VOLUMES IN AZURE.
 
+```
+
+C:\Users\dasar\pavan\three-tier-architecture-demo\AKS\helm>dir
+ Volume in drive C is Windows
+ Volume Serial Number is BC83-2EC9
+
+ Directory of C:\Users\dasar\pavan\three-tier-architecture-demo\AKS\helm
+
+06/17/2024  10:19 PM    <DIR>          .
+06/17/2024  10:19 PM    <DIR>          ..
+06/17/2024  10:19 PM               137 Chart.yaml
+06/17/2024  10:19 PM               360 ingress.yaml
+06/17/2024  10:19 PM             6,652 README.md
+06/17/2024  10:19 PM    <DIR>          templates
+06/17/2024  10:19 PM             1,107 values.yaml
+               4 File(s)          8,256 bytes
+               3 Dir(s)  244,199,792,640 bytes free
+```
 
 ```
 C:\Users\dasar\pavan\three-tier-architecture-demo\AKS\helm>kubectl get pods -n robot-shop
