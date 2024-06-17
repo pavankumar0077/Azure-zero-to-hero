@@ -246,9 +246,38 @@ rm -rf /tmp/temp_repo
         scriptPath: 'scripts/updateK8sManifests.sh'
         args: 'vote $imageRepository $tag'
 ```
-- NOW NEW IMAGE WILL BE CERATED AND 
+- NOW NEW IMAGE WILL BE CERATED AND ARGOCD WILL CHECK FOR THE CHANGES.
+
+## NOTE : ARGOCD BYDEFAULT CHECK FOR THE CHANGES FOR 3 MINUTES, TO GET THE CHANGES FAST LIKE TO SYNC FAST WE NEED TO USE.
 
 
+```
+kubectl edit cm argocd-cm -n argocd
+```
+
+```
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"ConfigMap","metadata":{"annotations":{},"labels":{"app.kubernetes.io/name":"argocd-cm","app.kubernetes.io/part-of":"argocd"},"name":"argocd-cm","namespace":"argocd"}}
+  creationTimestamp: "2024-06-17T05:52:50Z"
+  labels:
+    app.kubernetes.io/name: argocd-cm
+    app.kubernetes.io/part-of: argocd
+  name: argocd-cm
+  namespace: argocd
+  resourceVersion: "4121"
+  uid: cabbb1d9-5bdd-4113-a1ff-3aa9acebf984
+data:
+  timeout.reconciliation: 10s
+
+```
 
 
 
