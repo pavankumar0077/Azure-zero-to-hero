@@ -8,3 +8,8 @@
 
 ![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/b9c8848b-5902-4302-bdc5-393a6766de9a)
 
+- HERE REDIS IS CREATED AS STATEFUL SET, TO GET THE PERSISTENT MEMORY
+- BE'COZ REDIS GIVES THE FASTEST RETRIVAL OF DATA
+- IF THIS IS LOST THEN DATA MAY LOSE.
+
+![image](https://github.com/pavankumar0077/Azure-zero-to-hero/assets/40380941/013aa5c7-e5f8-46f8-a51d-ecd58ab29769)
