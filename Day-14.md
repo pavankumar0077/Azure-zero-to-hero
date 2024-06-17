@@ -138,6 +138,62 @@ stages:
         command: 'push'
         tags: '$(tag)'
 ```
+
+## NOTE : IF ABOVE PIPELINE SHOW ANY ERROR THEN USE THIS 
+
+```
+# Docker
+# Build and push an image to Azure Container Registry
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+trigger:
+  paths:
+    include:
+      - result/*
+resources:
+- repo: self
+variables:
+  # Container registry service connection established during pipeline creation
+  dockerRegistryServiceConnection: 'b5c2f9a6-d3e6-483e-a1e4-dc89397437ed'
+  imageRepository: 'resultapp'
+  containerRegistry: 'pavankumar0077.azurecr.io'
+  dockerfilePath: '$(Build.SourcesDirectory)/result/Dockerfile'
+  tag: '$(Build.BuildId)'
+  # Agent pool name
+  poolName: 'azureagent'
+stages:
+- stage: Build
+  displayName: Build
+  jobs:
+  - job: Build
+    displayName: Build
+    pool:
+      name: $(poolName)
+    steps:
+    - task: Docker@2
+      displayName: Build and push an image to container registry
+      inputs:
+        command: buildAndPush
+        repository: $(imageRepository)
+        dockerfile: $(dockerfilePath)
+        containerRegistry: $(dockerRegistryServiceConnection)
+        tags: |
+          $(tag)
+- stage: Push
+  displayName: Push
+  jobs:
+  - job: Push
+    displayName: Push
+    pool:
+      name: $(poolName)
+    steps:
+    - task: Docker@2
+      displayName: Push an image to container registry
+      inputs:
+        containerRegistry: '$(dockerRegistryServiceConnection)'
+        repository: '$(imageRepository)'
+        command: 'push'
+        tags: '$(tag)'
+```
 - Save & Run
 - IT WILL FAIL BECAUSE OF NO VM AGENT IS PRESENT AT THIS TIME
 
